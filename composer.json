@@ -1,0 +1,20 @@
+{
+  "name": "technas/technas",
+  "description": "Technas: payments and user accounts behind one client and one secret. The full package; technas/pay and technas/accounts are the thin ones.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["technas", "payments", "mobile money", "accounts", "users", "sign-in"],
+  "homepage": "https://github.com/Technas-Organization/technas-php",
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/Technas-Organization/technas-pay-php" },
+    { "type": "vcs", "url": "https://github.com/Technas-Organization/technas-accounts-php" }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "technas/accounts": "^0.1",
+    "technas/pay": "^0.4"
+  },
+  "autoload": { "psr-4": { "Technas\\": "src/" } },
+  "scripts": { "test": "php tests/run.php" },
+  "minimum-stability": "stable"
+}
